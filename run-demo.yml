@@ -15,10 +15,3 @@
     - routing_configuration
     - ntp_in_mgmt_vrf
       
-- hosts: servers
-  user: cumulus
-  become: yes
-  become_method: sudo
-  roles:
-    - server_interface_configuration
-    
