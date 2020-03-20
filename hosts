@@ -1,12 +1,14 @@
 [leaf]
-leaf01
-leaf02
-leaf03
-leaf04
+act-5812-51 ansible_host=10.50.22.133
+dell-s6010-51 ansible_host=10.50.22.129
+act-7726-51 ansible_host=10.50.22.130
+dell-s5248-51 ansible_host=10.50.24.112
+mlx-2410a1-51 ansible_host=10.50.21.133
+mlx-2410a1-54 ansible_host=10.50.24.109
 
 [spine]
-spine01
-spine02
+dell-s4000-56 ansible_host=10.50.23.132
+dell-s4000-57 ansible_host=10.50.23.131
 
 [exit]
 exit01
@@ -27,8 +29,6 @@ server04
 [network:children]
 leaf
 spine
-exit
-internetrouter
 
 [all:vars]
 ansible_user=cumulus
