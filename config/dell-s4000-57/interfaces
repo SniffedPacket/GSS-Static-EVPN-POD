@@ -1,0 +1,90 @@
+# Loopback interface
+auto lo
+iface lo inet loopback
+  address 10.0.0.22/32
+  alias loopback interface
+
+# Management interface
+auto eth0
+iface eth0 inet dhcp
+    alias management interface
+    vrf mgmt
+
+auto mgmt
+iface mgmt
+    address 127.0.0.1/8
+    vrf-table auto
+
+# Port to act-5812-51
+auto swp8
+iface swp8
+  mtu 9216
+  alias to act-5812-51
+
+# Port to act-5812-51
+auto swp18
+iface swp18
+  mtu 9216
+  alias to act-5812-51
+
+# Port to dell-s6010-51
+auto swp51
+iface swp51
+  mtu 9216
+  alias to dell-s6010-51
+
+# Port to dell-s6010-51
+auto swp52
+iface swp52
+  mtu 9216
+  alias to dell-s6010-51
+
+# Port to act-7726-51
+auto swp49
+iface swp49
+  mtu 9216
+  alias to act-7726-51
+
+# Port to act-7726-51
+auto swp50
+iface swp50
+  mtu 9216
+  alias to act-7726-51
+
+# Port to dell-s5248-51
+auto swp10
+iface swp10
+  mtu 9216
+  alias to dell-s5248-51
+
+# Port to dell-s5248-51
+auto swp53
+iface swp53
+  mtu 9216
+  alias to dell-s5248-51
+
+# Port to mlx-2410a1-51
+auto swp12
+iface swp12
+  mtu 9216
+  alias to mlx-2410a1-51
+
+# Port to mlx-2410a1-51
+auto swp20
+iface swp20
+  mtu 9216
+  alias to mlx-2410a1-51
+
+# Port to mlx-2410a1-54
+auto swp14
+iface swp14
+  mtu 9216
+  alias to mlx-2410a1-54
+
+# Port to mlx-2410a1-54
+auto swp22
+iface swp2
+  mtu 9216
+  alias to mlx-2410a1-54
+
+
