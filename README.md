@@ -10,7 +10,7 @@ The Network Topology is depicted below.
 
 
 ## Topology ##
-![GSS_Static_Lab](https://github.com/SniffedPacket/GSS-Static-EVPN-POD/master/RDU_Remote_Work_Lab_with_port-id_v2.png)
+![GSS_Static_Lab](https://github.com/SniffedPacket/GSS-Static-EVPN-POD/blob/master/RDU_Remote_Work_Lab_with_port-id_v2.png)
 
 
 
