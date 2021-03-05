@@ -4,10 +4,10 @@
 
   - name: copy FRR daemons.conf
     copy: src=config/daemons.conf dest=/etc/frr/
+    when: "{{ansible_lsb.release is version_compare('4.0', '>=') }}"
 
   - name: copy FRR conf
     copy: src=config/{{ansible_hostname}}/frr.conf dest=/etc/frr/
 
   - name: Restart FRR
     service: name=frr state=restarted
-
